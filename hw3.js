@@ -51,5 +51,5 @@ for (const user of org1_depts) {
 }
 output += end_tag
 
-const outputDiv = document.getElementById('output')
+const outputDiv = document.getElementById('output').value
 outputDiv.innerHTML = output
