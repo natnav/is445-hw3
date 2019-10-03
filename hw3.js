@@ -48,6 +48,7 @@ const end_li = '</li>'
 var output = start_tag
 for (const user of org1_depts) {
   output += start_li + user.name + end_li
+  output += start_li + user.children + end_li
 }
 output += end_tag
 
