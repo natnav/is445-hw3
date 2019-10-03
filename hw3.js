@@ -36,6 +36,9 @@ const org2_depts = [
 const org = document.getElementById('org').value
 org.innerHTML = 'Hello ' + message 
 */
+const message = prompt("What's your name?")
+
+// alert('Your input is: ' + message)
 
 const start_tag = '<ol>'
 const end_tag = '</ol>'
