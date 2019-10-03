@@ -1,6 +1,7 @@
-const org1_depts = [
+/*
+ / const org1_depts = [
     {
-      name: 'accounting',
+      deptOne: 'accounting',
       children: [
         { name: 'accounting payable', children: [] },
         { name: 'accounting receivable', children: [] },
@@ -29,10 +30,19 @@ const org1_depts = [
     },
   ]
 
-  const message = prompt("What is the organization department?")
+  */
+
+ const userName = 'John'; 
+ function showMessage() { 
+  const message = 'Hello, ' + userName
+  alert(message) 
+} 
+showMessage() // Hello, Joh
+
+  /* const message = prompt("What is the organization department?") 
 
 // alert('Your input is: ' + message)
 const output = document.getElementById('output')
-output.innerHTML = 'Hello ' + org1_depts
+output.innerHTML = org1_depts */
 
 
