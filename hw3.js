@@ -1,8 +1,8 @@
-
-const org1_depts = [
+var charArr = [
+  {org1_depts = [
   {
     name: 'accounting',
-    children: [
+    subDept: [
       { name: 'accounting payable', children: [] },
       { name: 'accounting receivable', children: [] },
     ],
@@ -11,12 +11,12 @@ const org1_depts = [
     name: 'finance',
     children: [],
   },
-]
+]},
 
-const org2_depts = [
+ {org2_depts = [
   {
     name: 'accounting',
-    children: [
+    subDept: [
       { name: 'accounting payable', children: [] },
       {
         name: 'accounting receivable',
@@ -26,8 +26,9 @@ const org2_depts = [
   },
   {
     name: 'finance',
-    children: [{ name: 'investment', children: [] }],
+    subDept: [{ name: 'investment', children: [] }],
   },
+]},
 ]
 
 
@@ -46,9 +47,9 @@ const start_li = '<li>'
 const end_li = '</li>'
 
 var output = start_tag
-for (const user of org1_depts) {
+for (const user of charArr) {
   output += start_li + user.name + end_li
-  output += start_li + user.children + end_li
+  output += start_li + user.subDept + end_li
 }
 output += end_tag
 
