@@ -36,7 +36,7 @@
   const message = prompt("What is the organization department?") 
 
 // alert('Your input is: ' + message)
-const output = document.getElementById('output').value;
+const org1_depts = document.getElementById("org1_depts").value;
 output.innerHTML = org1_depts;
 
 
