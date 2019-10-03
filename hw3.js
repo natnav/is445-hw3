@@ -1,5 +1,5 @@
-/*
- / const org1_depts = [
+
+ const org1_depts = [
     {
       deptOne: 'accounting',
       children: [
@@ -30,19 +30,13 @@
     },
   ]
 
-  */
+  
 
- const userName = 'John'; 
- function showMessage() { 
-  const message = 'Hello, ' + userName
-  alert(message) 
-} 
-showMessage() // Hello, Joh
 
-  /* const message = prompt("What is the organization department?") 
+  const message = prompt("What is the organization department?") 
 
 // alert('Your input is: ' + message)
-const output = document.getElementById('output')
-output.innerHTML = org1_depts */
+const output = document.getElementById('output').value;
+output.innerHTML = org1_depts;
 
 
