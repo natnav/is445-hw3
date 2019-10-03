@@ -29,16 +29,10 @@ const org1_depts = [
     },
   ]
 
-function PrintDepts(org1_depts) {
-    const list = "<ul>";
+  const message = prompt("What is the organization department?")
 
-    for(var i = 0; i < org1_depts.length; ++i) {
-        list = list + "<li>" + org1_depts[i].text;
-        if(org1_depts[i].org1_depts.length) {
-            list = list + PrintDepts(org1_depts[i].org1_depts);
-        }
-        list = list + "</li>";
-    }
-    return list + "</ul>";
-}
+// alert('Your input is: ' + message)
+const output = document.getElementById('output')
+output.innerHTML = message + org1_depts 
+
 
