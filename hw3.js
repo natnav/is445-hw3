@@ -33,6 +33,6 @@ const org1_depts = [
 
 // alert('Your input is: ' + message)
 const output = document.getElementById('output')
-output.innerHTML = message + org1_depts 
+output.innerHTML = 'Hello ' + message
 
 
